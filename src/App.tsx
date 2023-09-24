@@ -9,15 +9,22 @@ const DivStyle = styled.div`
   .container {
     width: 100%;
     margin: 0 auto;
+    background-color: #eba8eb;
   }
 
   a {
+    width: 50%;
     text-decoration: none;
-    color: black;
+    color: white;
   }
 
   nav {
+    width: 50%;
     float: right;
+  }
+
+  header nav div {
+    display: flex;
   }
 
   header {
@@ -57,8 +64,24 @@ const DivStyle = styled.div`
     background-color: #e75c49;
   }
 
-  .footer {
+  footer {
     width: 100%;
+    height: 50px;
+    display: flex;
+  }
+
+  footer .premium {
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .service {
+    width: 200px;
+  }
+
+  footer .center {
+    width: 200px;
   }
 `;
 
@@ -133,10 +156,10 @@ function App() {
           allowfullscreen
         ></iframe>
 
-        <footer class="footer">
-          <div>permium subscribe</div>
-          <div>custormer sercive center</div>
-          <div>address</div>
+        <footer>
+          <div class="premium">premium subscribe</div>
+          <div class="service">custormer service center</div>
+          <div class="address">address</div>
         </footer>
       </div>
     </DivStyle>
